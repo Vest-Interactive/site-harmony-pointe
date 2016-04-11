@@ -1,3 +1,3 @@
-# Brentwoodky.com 
+# Harmony Pointe	
 
-Finishing the initial build to use for the longwood and woodbridge.ZXZXZXZx
+Design and Template used to develop Harmony Pointe's Web Page.
