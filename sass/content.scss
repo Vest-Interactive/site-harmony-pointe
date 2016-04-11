@@ -1,0 +1,403 @@
+
+// Generic Content
+#content {
+	font-size: $fontSize;
+	font-family: $pageFont;
+
+	.headline {
+		padding: 50px;
+		text-transform: uppercase;
+
+		h1 {
+			text-align: center;
+			font-size: $fontSize * 2.25;
+			letter-spacing: 2px;
+			color: $lightBrown;
+		}
+	}
+}
+
+.content-block {
+	overflow: hidden;
+	clear: both;
+}
+
+.content-title {
+
+	img {
+		float: left;
+		transform: translateY(2px);
+	}
+
+	h2 {
+		float: left;
+		width: 100%;
+		//padding-left: 25px;		
+		vertical-align: middle;
+		font-size: $fontSize * 3;
+		line-height: 100px;
+		text-transform: uppercase;
+		border-bottom: 1px solid;
+	}
+
+	.title-breathingroom {
+		padding-left: 5%;
+	}
+	
+	.title-intro {
+		color: #718693;	
+	}
+
+	.title-amenities {
+		color: $white;
+	}
+
+	.title-downloads {
+		color: #898178;
+	}
+}
+
+#package-btn {
+	position: absolute;
+	bottom: -37px;
+	right: 0;
+	background: white;
+	height: 37px;
+	line-height: 37px;
+	padding: 0 15px;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: $lightBrown;
+	z-index: 9;
+
+	i {
+		float: left;
+		line-height: 37px;
+	}
+	p {
+		margin-left: 25px;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+// Sections
+#intro {
+	padding: 95px 0;
+	background: $lightBlue;
+
+	p {
+		font-size: $fontSize * 1.5;
+		line-height: $fontSize * 2.5;
+		color: $white;
+		padding: 35px;
+		font-weight: 300;
+	}
+}
+
+#amenities {
+	padding: 95px 0;
+	background: $darkBlue;
+
+	p {
+		font-size: $fontSize * 1.5;
+		line-height: $fontSize * 2.5;
+		color: $white;
+		padding: 35px;
+		font-weight: 300;
+	}
+}
+
+#homes {
+	padding: 95px 0;
+	background: $lightGreen;
+
+	.homes-message > p {
+		font-size: $fontSize * 1.5;
+		line-height: $fontSize * 2.5;
+		color: $black;
+		padding: 35px;
+		font-weight: 300;
+	}
+}
+
+.frame {
+	background: $white;
+	padding: 8px;
+	border: 1px solid $grey;
+	box-shadow: 0 0px 7px 0 rgba(0,0,0,0.3),0 5px 17px 0 rgba(0,0,0,0.15);
+	//border-radius: 5px;
+
+	img {
+			width: 100%;
+		}
+
+	.frame-details {
+		padding: 10px;		
+
+		& > h2 {
+			margin: 10px 0 20px 0;
+			font-size: $fontSize * 1.5;
+			font-weight: 400;
+			color: $black;
+			text-align: center;	
+			text-transform: uppercase;		
+		}
+
+		.square-footage {
+			border-top: 1px solid $grey;
+			font-size: $fontSize * 1.25;
+			color: $darkBlue;
+			margin-bottom: 10px;
+			padding-top: 10px;;
+		}
+
+	}
+
+}
+
+#downloads {
+	padding: 95px 0;
+	background: $lightBrown;
+
+	p {
+		font-size: $emSize * 1.5;
+		line-height: $emSize * 2.5;
+		color: $black;
+		padding: 35px;
+		font-weight: 300;
+	}
+
+	.map-block {
+		img {
+			//border: 15px solid $white;
+		}
+	}
+}
+
+.downloads-links { 
+
+	$btnHeight : 50px;
+	$dwnldBtnBg : #B6AB9E;
+
+	h2 {
+		font-family: $headerFont;
+		font-size: $fontSize * 2;
+		color: $black;
+		padding-bottom: 15px;
+
+	}
+
+	& > a {
+		display: block;
+		width: 100%;
+		height: $btnHeight;
+		margin: 10px 0;
+		background-color: shade($lightBrown, 30%);
+		border-bottom: 3px solid shade($lightBrown, 50%);
+		text-decoration: none;
+		color: $white;
+
+		i {
+			float: left;
+			padding-left: 5%;
+			font-size: $fontSize * 2.5;
+			line-height: $btnHeight;
+		}
+
+		.label {
+			text-align: center;
+			//line-height: $btnHeight;
+			padding: 15px;
+		}
+	}
+}
+
+#contact {
+	$offWhite : #f9f9f9;
+ 
+	background-color: $offWhite;
+
+	.envelop-container {
+		//min-height: 600px;
+		background-image: url('../images/bg-brentwood_map.png');
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
+
+	.contact-headline {
+		h2 {
+			margin-top: 115px;			
+			line-height: $fontSize * 2.5;
+			color: $darkBlue;
+			font-weight: 200;
+			font-size: $fontSize * 2;
+		}
+	}
+
+	.envelope-slip {
+		max-width: 711px;
+		//min-height: 500px;
+		width: 90%;
+		height: 100%;
+		margin: 80px auto;
+		box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+		background-color: $white;
+		overflow: hidden;
+		@include transition(.5s ease);
+
+		.envelope-parlor {
+			background: url('../images/envelope-parlor.png') repeat;
+			height: 7px;
+		}
+	}
+}
+
+#contact-form {
+	padding: 35px;
+
+	input[type="text"], textarea {
+		width: 90%;
+		padding: 5px 5%;
+		border-radius: 2px;
+		box-shadow: none;
+		color: $darkBlue;
+		border: 1px solid $grey;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	label {
+		float: left;
+		padding: 10px 0;
+		color: $grey;
+		font-size: $fontSize * .8;;
+	}
+
+	.form-row {
+		margin: 10px 0;
+		overflow: hidden;
+		clear: both;
+	}
+
+	.row-input {
+		float: left;
+		width: 40%;
+		padding: 0 5%;
+	}
+
+	.row-textarea, .row-btn {
+		padding: 0 5%;
+	}
+
+	button {
+		margin-top: 10px;
+		width: 100%;
+		height: 50px;
+		background-color: $darkBlue;
+		border-top: none;
+		border-right: none;
+		border-bottom: 5px solid shade($darkBlue, 30%);
+		border-left: none;
+		color: $white;
+		text-transform: uppercase;
+		font-size: $fontSize;
+		font-weight: 200;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.error {
+		color: rgb(247, 103, 103);
+	}
+}
+
+#contact-form-thankyou {
+	display: none;
+
+	h3 {
+		text-align: center;
+		color: $black;
+		font-size: $fontSize * 2;
+		padding: 25%;
+	}
+}
+
+
+#foot {
+	background-color: $darkBlue;
+	padding-bottom: 55px;
+	font-size: $fontSize * .9;
+
+	.foot-container {
+
+		padding-top: 40px;
+
+		h4 {
+			text-transform: uppercase;
+			color: $white;
+			border-bottom: 1px solid $white;
+			padding-bottom: 10px;
+			font-size: $fontSize * 1.2;
+		}
+
+		li {
+			clear: both;
+			padding: 15px 0;
+		}
+
+		.info {
+			color: $lightBlue;
+
+			i {
+				float: left;
+			}
+			a, span {
+				float: left;
+				margin-left: 20px;
+				text-decoration: none;
+				color: $lightBlue;
+			}
+		}
+	}
+
+	.copyright {
+		color: $white;
+		font-size: $fontSize;
+		font-weight: 200;
+		text-align: right;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	#contact-form {
+		.row-input {
+			float: left;
+			width: 90%;
+			padding: 0 5%;
+		}
+	}
+
+	
+
+	#contact .envelope-slip {
+		width: 100%;
+
+		#contact-form {
+			padding: 10px;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.content-title img {
+		display: none;
+	}
+}
+

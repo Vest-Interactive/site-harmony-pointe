@@ -1,0 +1,170 @@
+/* toolbar */
+
+$toolbarHeight : 115px;
+
+#toolbar {
+	// position: fixed;
+	display: block;
+	width: 100%;
+	min-height: $toolbarHeight;
+	font-family: $headerFont;
+	background-color: $white;
+	z-index: 1;
+	box-shadow: 0px 1px 5px rgba(0,0,0,.15);
+	@include transition(.5s ease);
+
+	.fixed-logo {
+	  	display: none;
+	}
+
+	.toolbar-links-mobile {
+		display:none;
+	}
+
+	li.current > a {
+		border-bottom: 3px solid $lightGreen;
+		padding-bottom: 5px;
+		@include transition(.3s ease);
+		color: $lightGreen;
+	}
+
+	.parlor-bar {		
+		ol {
+			position: absolute;
+			width: 100%;
+
+			li {
+				  width: 25%;
+				  height: 4px;
+				  margin: 0;
+				  padding: 0;
+				  vertical-align: top;				  
+				  font-size: 0;
+				  float: left;		
+			}			
+
+			.bar-darkBlue {
+				background: $darkBlue;
+			}
+			.bar-lightBlue {
+				background: $lightBlue;
+			}
+			.bar-lightGreen {
+				background: $lightGreen;
+			}
+			.bar-lightBrown {
+				background: $lightBrown;
+			}
+		}
+	}
+
+
+
+
+	.logo {
+		display: block;
+		margin-top: 8px;
+		vertical-align: middle;	
+	}
+
+	ul {
+		display: block;
+		min-height: $toolbarHeight;
+		float: right;
+		line-height: $toolbarHeight;
+
+		li {
+			display: inline-block;
+			padding: 0 10px;
+
+			a {
+				color: $black;
+				text-decoration: none;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 960px) {
+	.logo {			
+			width: 200px;
+			margin: 0 auto 0 auto;
+			padding-top: 15px;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		ul {			
+			height: 100%;
+			min-height: 100%;
+			line-height: 100%;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+
+		#toolbar-links-full {
+			display: none;
+		}
+		.toolbar-links-mobile {
+			display:block;
+
+			select {
+				width: 100%;
+			}
+		}
+	}
+
+}
+
+// Fixed Navigation
+#toolbar.fixed-toolbar {
+
+	$fixedToolbarHeight: 100px;
+
+	position: fixed;
+	min-height: $fixedToolbarHeight;
+	@include animation(fixed-nav 0.6s ease);
+
+
+	.logo {
+		display: none;
+	}
+
+	.fixed-logo {
+	  	display: block;
+	  	margin-top: 15px;
+	}
+
+	ul {
+		min-height: $fixedToolbarHeight;
+		line-height: $fixedToolbarHeight;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.logo {
+			display: block;
+		}
+
+		.fixed-logo {
+		  	display: none;		  	
+		}
+
+		ul {
+			min-height: 100%;
+			line-height: 100%;
+		}
+	}
+
+}
+
+
+// Animations
+@include keyframes(fixed-nav) {
+  from {
+    margin-top: -300px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+

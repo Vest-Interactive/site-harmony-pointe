@@ -1,0 +1,28 @@
+/* Global Variables */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Fonts */
+
+$headerFont : 'Lato', Arial, Helvetica, sans-serif;
+$pageFont 	: 'Lato', Arial, Helvetica, sans-serif;
+$fontSmoothing : antialiased;
+
+/* Base Sizes */
+
+$emSize : 16px;
+$fontSize : 16px;
+
+/* Site Colors */
+
+$white : #ffffff;
+$black : #414141;
+$grey : #cecece;
+$darkBlue : #7a99ac;
+$lightBlue : #a4bcc2;
+$lightGreen : #d1e0d7;
+$lightBrown : #c5b9ac;
+
+/* Brand Colors */
+
+$primaryColor : $darkBlue;
+$secondaryColor : $lightBlue;

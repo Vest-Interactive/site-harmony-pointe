@@ -1,0 +1,81 @@
+
+.parallax {
+	position:relative;
+	width: 100%;
+	height: 580px; 
+	background-color: $white;
+	// background-color:#000; height:580px; width:100%; position:relative; 
+	// -moz-box-shadow: inset 0 0px 4px 1px #2b2b2b;
+	// 	-webkit-box-shadow: inset 0 0px 4px 1px #2b2b2b;
+	// 		box-shadow: inset 0 0px 4px 1px #2b2b2b;
+
+}
+
+#photo1 {
+	//padding-top: 50px;
+	background:url(../images/photos/intro.jpg) no-repeat center center; background-size: cover; 
+	background-attachment: fixed;
+  		-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  				-o-background-size: cover; 
+}
+
+#photo2 {
+	background:url(../images/photos/house.jpg); 
+	background-size: cover; 
+	background-attachment: fixed;
+  		-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  				-o-background-size: cover; 
+}
+
+#photo3 {
+	background:url(../images/photos/intro.jpg);
+	background-size: cover; 
+	background-attachment: fixed;
+  		-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  				-o-background-size: cover;
+}
+
+#photo4 {
+	background:url(../images/photos/entrance.jpg);
+	background-size: cover; 
+	background-attachment: fixed;
+  		-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  				-o-background-size: cover;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.parallax {
+		height: 300px;
+		width: 100%;
+		background-color: #f9f9f9;	
+	}
+
+	#photo1 {
+		background: url(../images/photos/mobile-intro.jpg) no-repeat center center;
+ 		background-position: 50% 0px !important;
+	}
+
+	#photo2 {
+		background: url(../images/photos/mobile-house.jpg) no-repeat center center;
+ 		background-position: 50% 0px !important;
+	}
+
+
+	#photo3 {
+		background: url(../images/photos/mobile-intro.jpg) no-repeat center center;
+ 		background-position: 50% 0px !important;
+	}
+
+	#photo4 {
+		background: url(../images/photos/mobile-entrance.jpg) no-repeat center center;
+ 		background-position: 50% 0px !important;
+	}
+
+
+}
